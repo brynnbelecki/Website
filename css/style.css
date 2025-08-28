@@ -31,6 +31,7 @@ img {
     max-width: 100%;
 }
 
+/*Navigation Bar*/
 .navbar {
     background: #fff; 
     padding: 20px; 
@@ -44,7 +45,7 @@ img {
 
 .navbar .container .title {
     font-family: 'Poppins', sans-serif; 
-    font-size: 20px;
+    font-size: 30px;
     line-height: 1.5;
     background: #fff;
 }
@@ -67,7 +68,47 @@ img {
 }
 
 .navbar ul li a i {
+    margin-right: 10px;
+}
+
+/* Project Bar*/
+.projbar {
+    background: #333; 
+    padding: 20px; 
+}
+
+.projbar .container {
+    display: flex; 
+    justify-content: space-between;
+    align-items: center;
+}
+
+.projbar .container .title {
+    font-family: 'Poppins', sans-serif; 
+    font-size: 20px;
+    line-height: 1.5;
+    background: #fff;
+}
+
+.projbar .main-menu ul {
+    display: flex;
+}
+
+.projbar ul li a {
+    padding: 10px 20px; 
+    display: block; 
+    font-weight: 600; 
+    transition: 0.5s;
     margin-left: 10px;
+    margin-right: 10px;
+}
+
+.projbar ul li a:hover {
+    color: var(--light-blue);
+}
+
+.projbar ul li a i {
+    margin-right: 10px;
 }
 
 /* About Me */
