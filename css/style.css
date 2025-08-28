@@ -42,6 +42,13 @@ img {
     align-items: center;
 }
 
+.navbar .container .title {
+    font-family: 'Poppins', sans-serif; 
+    font-size: 20px;
+    line-height: 1.5;
+    background: #fff;
+}
+
 .navbar .main-menu ul {
     display: flex;
 }
