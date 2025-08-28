@@ -57,14 +57,41 @@ img {
     padding: 10px 20px; 
     display: block; 
     font-weight: 600; 
-    transition: 0.5s
+    transition: 0.5s;
+    margin-left: 10px;
+    margin-right: 10px;
 }
 
 .navbar ul li a:hover {
     color: var(--blue);
 }
 
-/* Utility Classes */
+.navbar ul li a i {
+    margin-left: 10px;
+}
+
+/* About Me */
+.about-me {
+    margin-bottom: 50px;
+}
+
+.about-me .container {
+    background: url('../images/about-me.png') no-repeat; 
+    background-size: contain; 
+    background-position: center bottom; 
+    height: 550px; 
+}
+
+.about-me .about-me-content {
+    width: 70%
+}
+
+.hero .hero-text {
+    width: 70%; 
+    margin-bottom: 20px; 
+}
+
+/* UTILITY CLASSES */
 .container {
     max-width: 1100px; 
     margin: 0 auto; 
@@ -102,4 +129,44 @@ img {
 
 .btn-light:hover {
     color: var(--blue);
+}
+
+/* Text Classes */
+.text-xxl {
+    font-size: 3rem; 
+    line-height: 1.2; 
+    font-weight: 6--; 
+    margin: 40px 0 20px; 
+}
+
+.text-xl {
+    font-size: 2.2rem; 
+    line-height: 1.4; 
+    font-weight: normal; 
+    margin: 40px 0 20px; 
+}
+
+.text-lg {
+    font-size: 1.8rem; 
+    line-height: 1.4; 
+    font-weight: normal; 
+    margin: 30px 0 20px; 
+}
+
+.text-md {
+    font-size: 1.2rem; 
+    line-height: 1.4; 
+    font-weight: normal; 
+    margin: 20px 0 10px; 
+}
+
+.text-sm {
+    font-size: 0.9 rem; 
+    line-height: 1.4; 
+    font-weight: normal; 
+    margin: 10px 0 5px; 
+}
+
+.text-center {
+    text-align: center; 
 }
