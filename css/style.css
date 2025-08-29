@@ -115,7 +115,7 @@ img {
 
 /* About Me */
 .about-me {
-    margin-bottom: 50px;
+    margin-bottom: 0px;
 }
 
 .about-me .container {
@@ -126,12 +126,19 @@ img {
 }
 
 .about-me .about-me-content {
-    width: 70%
+    width: 70%;
+    margin-bottom: 20px; 
 }
 
-.hero .hero-text {
-    width: 70%; 
-    margin-bottom: 20px; 
+/* Projects */
+.proj {
+    padding: 40px 0;
+}
+
+.proj .container .proj-content .img-grid {
+    display: grid; 
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 30px; 
 }
 
 /* UTILITY CLASSES */
