@@ -134,6 +134,12 @@ img {
     margin-bottom: 20px; 
 }
 
+.about-me .about-me-content .about-me-grid {
+    display: grid; 
+    grid-template-columns: 1fr 2fr;
+    gap: 20px;
+}
+
 /* Projects */
 .proj {
     padding: 20px 0;
