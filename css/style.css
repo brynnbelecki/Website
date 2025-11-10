@@ -45,7 +45,7 @@ img {
 
 .navbar .container .title {
     font-family: 'Poppins', sans-serif; 
-    font-size: 30px;
+    font-size: 36px;
     line-height: 1.5;
     background: #fff;
 }
@@ -110,7 +110,7 @@ img {
 }
 
 .projbar ul li a:hover {
-    color: var(--light-blue);
+    color: var(--blue);
 }
 
 .projbar ul li a i {
@@ -233,5 +233,5 @@ img {
 
 .bg-light {
   background: #DEDEDE;
-  color: #000;
+  color: #333;
 }
