@@ -316,7 +316,7 @@ img {
     display: block;
 }
 
-.img-grid .image img[src*="P2.3"] { object-position: top; }
+.img-grid .image img[src*="P2.3"] { object-position: center; }
 
 /* Home / Projects text links under each project's images */
 .img-grid .proj-links {
