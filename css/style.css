@@ -34,7 +34,8 @@ img {
 /*Navigation Bar*/
 .navbar {
     background: #fff; 
-    padding: 20px; 
+    padding-top: 20px;
+    padding-bottom: 10px 
 }
 
 .navbar .container {
@@ -128,6 +129,7 @@ img {
     background-position: center bottom; 
     height: auto;
     min-height: 0;
+    padding-top: 5px;
     padding-bottom: 40px; 
 }
 
@@ -147,10 +149,35 @@ img {
     padding: 20px 0;
 }
 
+/* Four-column grid for the whole project */
+.proj .container .proj-content {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 30px;
+    align-items: start;
+}
+
+/* Heading spans all four columns */
+.proj .container .proj-content .proj-heading {
+    grid-column: 1 / -1;
+}
+
+/* Images: left half (columns 1-2) */
 .proj .container .proj-content .img-grid {
-    display: grid; 
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 30px; 
+    grid-column: 1 / 3;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+}
+
+/* First image spans both columns of the image half */
+.proj .container .proj-content .img-grid .image:first-child {
+    grid-column: 1 / -1;
+}
+
+/* Text: right half (columns 3-4) */
+.proj .container .proj-content .proj-text {
+    grid-column: 3 / 5;
 }
 
 /* UTILITY CLASSES */
@@ -213,7 +240,7 @@ img {
     font-size: 1.2rem; 
     line-height: 1.4; 
     font-weight: bold; 
-    margin: 20px 0 10px; 
+    margin: 20px 0 20px; 
 }
 
 .text-sm {
@@ -264,4 +291,91 @@ img {
     height: 100%;
     object-fit: cover;
     display: block;
+}/* Delete the old .img-grid { grid-template-columns: repeat(3, 1fr); ... } block */
+
+.img-grid .image {
+    width: 100%;
+    height: auto;              /* sized by content instead of a fixed 280px */
+    overflow: hidden;
+    border-radius: 12px;
+}
+
+.img-grid .image:first-child {
+    aspect-ratio: 16 / 9;
+}
+
+.img-grid .image:not(:first-child) {
+    aspect-ratio: 3 / 4;
+}
+
+.img-grid .image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+/* Home / Projects text links under each project's images */
+.img-grid .proj-links {
+    grid-column: 1 / -1;
+    display: flex;
+    gap: 20px;
+    margin-top: 5px;
+}
+
+.container .proj-links a {
+    font-weight: 600;
+    transition: 0.5s;
+}
+
+.container .proj-links a:hover {
+    color: var(--blue);
+}
+
+/* Footer */
+.footer {
+    background: #333;
+    color: #fff;
+    padding: 30px 20px;
+}
+
+.footer .footer-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;   /* two equal columns */
+    column-gap: 40px;
+    align-items: start;
+}
+
+.footer-heading {
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.footer p {
+    font-size: 0.9rem;
+}
+
+.footer-links {
+    display: flex;
+    flex-direction: column;   /* links stacked in the column */
+    gap: 8px;
+}
+
+.footer a {
+    color: #fff;
+    font-size: 0.9rem;
+    font-weight: 600;
+    transition: 0.5s;
+}
+
+.footer a:hover {
+    color: var(--blue);
+}
+
+@media (max-width: 300px) {
+    .footer .footer-grid {
+        grid-template-columns: 1fr;
+        row-gap: 20px;
+    }
 }
