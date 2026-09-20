@@ -316,6 +316,8 @@ img {
     display: block;
 }
 
+.img-grid .image img[src*="P2.3"] { object-position: top; }
+
 /* Home / Projects text links under each project's images */
 .img-grid .proj-links {
     grid-column: 1 / -1;
