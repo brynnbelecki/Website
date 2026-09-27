@@ -78,7 +78,8 @@
                         Currently, I am the team lead for the battery management system at UBC Thunderbikes, UBC's electric
                         motorcycle student design team. I am also working with the Technische Physik group at the University of Wuerzburg
                         on imaging deterministic single-photon sources. 
-            
+                        <br>
+                        <br>
                         In my career, I hope to have the opportunity to do either research or design work with the intention of contributing 
                         to the unique and pressing challenge of balancing societal energy needs with ongoing environmental concerns.
                           
@@ -143,7 +144,7 @@
     </nav>
 
      <!-- P6 Battery Management System-->
-     <section class="proj bg-light" id="P6">
+     <section class="proj" id="P6">
         <div class="container">
             <div class="proj-content">
                 <h1 class="proj-heading text-md">
@@ -152,6 +153,7 @@
                 <div class="img-grid">
                     <div class="image">
                         <a href="index.html"><img src="images/P6.1.webp" /></a>
+                        <figure><figcaption>LTspice simulation of the BMS circuit</figcaption></figure>
                     </div>
                     <div class="image">
                         <a href="index.html"><img src="images/P6.2.png" /></a>
@@ -161,9 +163,11 @@
                     </div>                    
                 </div>
                 <p class="proj-text">
-                    I am working with a team of students on the hardware design for a battery management system which senses and regulates the voltage, 
-                    current, temperature, and state of charge of the lithium ion battery which powers our electric motorcycle. In this role, I used LTspice
-                    to simulate elements of the design, and Altium to create the schematic and layout of the system.  
+                    I am the battery management system (BMS) project lead for UBC Thunderbikes, an engineering student design team which 
+                    is building an electric motorcycle to compete in the MotoStudent Electric Competition in Spain in 2027. Me and another student
+                    are responsible for the hardware design of the BMS, which senses and regulates the voltage, current, temperature, 
+                    and state of charge of the lithium ion battery which powers our electric motorcycle. In this role so far, I have 
+                    used LTspice to simulate elements of the design, and Altium to create the schematic and layout of our first prototype.  
                 </p>
             </div>
             <div class="proj-links">
@@ -174,7 +178,7 @@
      </section> 
 
      <!-- P5 Hyperspectral Imaging-->
-     <section class="proj" id="P5">
+     <section class="proj bg-light" id="P5">
         <div class="container">
             <div class="proj-content">
                 <h1 class="proj-heading text-md">
@@ -192,7 +196,18 @@
                     </div>                    
                 </div>
                 <p class="proj-text">
-                    text here.  
+                    From May 2026 to December 2026, I did a research internship at the University of Wuerzburg (Germany) working with their PhD students on hyperspectral imaging. 
+                    Hyperspectral imaging is used to locate quantum dot emitters on a sample with both spectral and spatial precision. This allows circular Bragg gratings (CBGs) to be etched onto the sample to facilitate out-of-plane deterministic single-photon emission. Background for this research can be found in <a href="https://link.springer.com/article/10.1186/s40580-025-00501-5" target="_blank">this paper</a>.
+                    <br>
+                    <br>
+                    While working on this project I improved the hyperspectral imaging software to increase throughput and improve quantum dot selection.
+                    <br>
+                    - Added seeding of default start parameters for marker fits in each sample to reduce the amount of manual fitting required.
+                    <br>
+                    - Changed procedure architecture so that each marker is fit individually (rather than each set of 4 or 9 markers), and added JSON files to document past fitting in case fitting is interrupted. 
+                    <br>
+                    - Added filtering for spectral data based on mean normalized intensity to automatically identify which quantum dots have narrow, high-intensity peaks.
+ 
                 </p>
             </div>
             <div class="proj-links">
@@ -221,7 +236,20 @@
                     </div>                    
                 </div>
                 <p class="proj-text">
-                    Text here. 
+                    I was also very involved in the building of a new imaging setup focused on imaging quantum dots in the Telecom-C band. This requires optics for illumination and laser excitation of the sample, 
+                    and optics to direct the emitted light to both an InGaAs camera for real space imaging and a spectrometer for spectral data collection. 
+                    <br>
+                    <br>
+                    My involvement included:
+                    <br>
+                    - Improving on the current illumination scheme by using a Kohler illumination setup by simulating possible lens combinations using Ansys Zemax and building test optical setups to validate the simulation
+                    <br>
+                    - Creating a comprehensive list of components required in the new setup and contacting manufacturers to facilitate purchase of components in a time effective and costly manner
+                    <br>
+                    - (In progress) Building up and testing the new setup
+                    <br>
+                    <br>
+                    In September 2026, I presented my work on this at the Photonic Quantum Computing Conference held in Jena, Germany (link to poster). 
                 </p>
             </div>
             <div class="proj-links">
@@ -339,8 +367,8 @@
                     </div>                    
                 </div>
                 <p class="proj-text">
-                    In winter 2025, I did an internship at CNRL as an exploit student. While I was there, I built a fault slip analysis 
-                    tool in python and excel which determines risk of slipping for different input fault parameters. The tool also plots 
+                    During my time at Canadian Natural Resources Limited (CNRL) in 2025, I built a fault slip analysis 
+                    tool using python and excel which determines risk of slipping for different input fault parameters. The tool also plots 
                     each fault so that the pressure from the reservoir can be visualized geographically and on a Mohr's circle. Finally, a 
                     Monte Carlo analysis is run on the dataset to determine the likelihood of different output values due to uncertainty 
                     in the input parameters.
